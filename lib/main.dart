@@ -36,7 +36,11 @@ class _CardState extends State<Card> {
         elevation: 0.0,
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          setState(() {
+            level1++;
+          });
+        },
         backgroundColor: Colors.amber[900],
         child: const Icon(Icons.add),
       ),
